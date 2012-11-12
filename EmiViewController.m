@@ -40,12 +40,12 @@
  // Do any additional setup after loading the view, typically from a nib.
     // EmiDataController *theController = self.emiData;
      
-     NSLog(@"THe value of emi stored in the view controller object atthis point is  %@", self.theEmi);
+     //NSLog(@"The value of emi stored in the view controller object at this point is  %@", self.theEmi);
      if (([self.theEmi floatValue]!=0)&&([self.theInterest floatValue] != 0) &&([self.theTotal floatValue] != 0))
      {                           
          NSNumber *emiCalculated = [NSNumber alloc];
          emiCalculated =  self.theEmi;
-         NSLog(@"The value receieved by the view controller is %@",self.theEmi );
+        // NSLog(@"The value receieved by the view controller is %@",self.theEmi );
          
          
      NSNumber *interestCalculated = [NSNumber alloc];
@@ -69,10 +69,10 @@
      
      else
      {
-         NSLog(@"The view contorller object does not get initialised so it skips ot the else loop and displays null");
+         //NSLog(@"The view controller object does not get initialised so it skips to the else loop and displays null");
          NSString *greetA = @"Calulated Emi is null";
          
-         NSString *greetB = @"Calculated interest is null";
+         NSString *greetB = @"Calculated Interest is null";
          
          NSString *greetC = @"Calculated total is null";
          

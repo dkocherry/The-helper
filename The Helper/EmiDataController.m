@@ -48,10 +48,12 @@
     
     float monthlyRate = [inputData annualToMonthly];
     
+    monthlyRate = monthlyRate/100;
+    
     float principal = [inputData.principalAmount floatValue];
     
     float term = [inputData.loanTerm floatValue];
-    NSLog(@"The principal value passed to calculate is %@",inputData.principalAmount);
+   // NSLog(@"The principal value passed to calculate is %@",inputData.principalAmount);
     
     
     float emi, total, interest;
@@ -63,7 +65,7 @@
         emi = principal * monthlyRate * powf(tempA, term)/ (powf(tempA, term)- 1);
         
         NSNumber *tempOne = [[NSNumber alloc] initWithFloat:emi];
-        NSLog(@"calculated emi is %@", tempOne);
+        //NSLog(@"calculated emi is %@", tempOne);
         total = emi * term;
         
         interest = total - principal;
@@ -81,7 +83,7 @@
     
     EmiDataController *emiOutput = [[EmiDataController alloc] initWithEmi:emi interestPayable:interest totalPayment:total];
    
-    NSLog(@"The value of emi returned by calculate function is %@", emiOutput.emi);
+    //NSLog(@"The value of emi returned by calculate function is %@", emiOutput.emi);
     return emiOutput;
     
 }

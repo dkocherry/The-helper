@@ -86,23 +86,16 @@
         float rateValue = [self.tipSliderLabel.text floatValue]; 
       //  NSLog(@"The value of bill received from user is %@", billValue);
         
-        //int billValue = [self.billAmount.text intValue];
-        
-        //int rateValue = [self.tipSliderLabel.text intValue]; 
-        
-   //     [self.tipDataControl initializeWithBill:billValue tipRate:rateValue];
-                
-//        [self.tipDataControl calculateTip];
-        
+             
         TipDataController *tipDataControl = [TipDataController alloc];
         [tipDataControl initializeWithBill:billValue tipRate:rateValue];
-        NSLog(@"The stored billValue is %@", tipDataControl.theBill.billAmount);
+       // NSLog(@"The stored billValue is %@", tipDataControl.theBill.billAmount);
                 
         float theTip = [tipDataControl calculateTip]; 
         
         NSNumber *tip = [[NSNumber alloc] initWithFloat:theTip];
         
-        NSLog(@"The caculated tip is %@", tip); 
+      //  NSLog(@"The caculated tip is %@", tip); 
                         
         TipViewController *Display = [TipViewController alloc]; 
         
@@ -111,7 +104,7 @@
         
         Display.theFinalTip = tip;
         
-        NSLog(@"The tip value passed to view controller is %@", Display.theFinalTip);
+      //  NSLog(@"The tip value passed to view controller is %@", Display.theFinalTip);
       
     }
 }@end

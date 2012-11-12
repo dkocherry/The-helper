@@ -33,18 +33,28 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    if ([self.theFinalTip floatValue] !=0) {
+        
+   
 	
     NSNumber *tipAmount = [NSNumber alloc]; 
     tipAmount = self.theFinalTip;  
     
-      NSLog(@"The tip value recieved by view controller is %@", self.theFinalTip);
+     // NSLog(@"The tip value recieved by view controller is %@", self.theFinalTip);
     
         NSString *greeting = [[NSString alloc] initWithFormat:@"Tip Amount is Rs.%@ /-", tipAmount];
         
         self.TIPDisplay.text = greeting; 
+       
+        
+   }    
     
- //   }    
-    // Do any additional setup after loading the view.
+    else {
+        NSString *errorGreeting = [[NSString alloc] initWithFormat:@"Sorry, there was an error in the calculation. Please re-enter bill amount"];
+        self.TIPDisplay.text = errorGreeting;
+        
+    }// Do any additional setup after loading the view.
     
 }
 

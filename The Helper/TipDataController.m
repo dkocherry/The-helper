@@ -46,7 +46,7 @@
     
     self.theBill = billItem;
     
-    NSLog(@"the data control object is initialised with bill %@",self.theBill.billAmount );
+   // NSLog(@"the data control object is initialised with bill %@",self.theBill.billAmount );
     //sometrouble here, it didnt go into initWithBillAmount
    // self.theBill = [self.theBill initWithBillAmount:billAmt tipRate:tipRate];
 }

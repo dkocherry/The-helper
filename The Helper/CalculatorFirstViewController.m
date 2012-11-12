@@ -133,18 +133,18 @@
        // theInput = [theInput initWithPrincipalAmount:principalValue interestRate:rateValue loanTerm:termValue];
         
         
-        NSLog(@"the term input value is %@",theInput.loanTerm);
+        //NSLog(@"the term input value is %@",theInput.loanTerm);
         
         EmiDataController *inputController =[ EmiDataController alloc];
         
         inputController.input = theInput;
-        NSLog(@"the input value is %@",inputController.input.loanTerm);
+      //  NSLog(@"the input value is %@",inputController.input.loanTerm);
        // inputController.input = [inputController.input initWithPrincipalAmount:principalValue interestRate:rateValue loanTerm:termValue];
         
         EmiDataController *outputController = [ EmiDataController alloc];
         outputController = [inputController calculate]; 
         
-        NSLog(@"the calculated emi is %@", outputController.emi);
+        //NSLog(@"the calculated emi is %@", outputController.emi);
         EmiViewController *Display  = [EmiViewController alloc]; 
         
         //Opting for a more direct way to do it.
@@ -160,7 +160,7 @@
         
         Display.theTotal = outputController.totalPayment;
         
-        NSLog(@"The emi value passed to view controller is %@", Display.theEmi);
+      //  NSLog(@"The emi value passed to view controller is %@", Display.theEmi);
                                     
       }
 }
