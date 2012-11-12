@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1179"/>
+    </dependencies>
+    <scenes>
+        <!--Calculator First View Controller - First-->
+        <scene sceneID="11">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="EmiMainScreen" title="First" id="2" customClass="CalculatorFirstViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="16">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Principal Amount" minimumFontSize="17" clearButtonMode="whileEditing" id="ZiK-hq-6Y5">
+                                <rect key="frame" x="20" y="72" width="280" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="g0W-LX-IrP"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Loan Term in Months" minimumFontSize="17" clearButtonMode="whileEditing" id="4KH-eP-QO0">
+                                <rect key="frame" x="20" y="206" width="280" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="ADc-YM-Js0"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hcy-sa-ybp">
+                                <rect key="frame" x="20" y="287" width="280" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Calculate:" destination="2" eventType="touchUpInside" id="xcK-Co-CbI"/>
+                                    <segue destination="EtJ-n1-KCc" kind="push" identifier="CalculateEmiValue" id="QvM-k2-lWU"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="1" maxValue="100" id="lRJ-Uo-U5q">
+                                <rect key="frame" x="139" y="137" width="130" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="2" eventType="valueChanged" id="qPQ-oI-EWi"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="50" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="ihC-tr-cS6">
+                                <rect key="frame" x="32" y="137" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Loan" image="53-house.png" id="7"/>
+                    <navigationItem key="navigationItem" title="Loan Calculator" id="wga-Ba-cZv"/>
+                    <connections>
+                        <outlet property="loanTerm" destination="4KH-eP-QO0" id="JKe-wu-CaH"/>
+                        <outlet property="principalAmount" destination="ZiK-hq-6Y5" id="HPz-MN-EOZ"/>
+                        <outlet property="rate" destination="lRJ-Uo-U5q" id="Jcq-Bs-xlO"/>
+                        <outlet property="sliderLabel" destination="ihC-tr-cS6" id="l3Z-lF-cLj"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="811" y="-310"/>
+        </scene>
+        <!--Emi View Controller - Results-->
+        <scene sceneID="Eot-0X-eKE">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QoE-3h-gWb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="EtJ-n1-KCc" customClass="EmiViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H2A-b0-3qE">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Emi Calculated" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="8ig-2f-7d2">
+                                <rect key="frame" x="20" y="35" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Interest Payable Calculated" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="KsH-yi-Psb">
+                                <rect key="frame" x="20" y="82" width="280" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Total Payment calculated" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="hvL-C2-kFC">
+                                <rect key="frame" x="20" y="141" width="280" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Results" id="7kN-NG-YIv"/>
+                    <connections>
+                        <outlet property="EmiDisplay" destination="8ig-2f-7d2" id="YeT-Yr-SpW"/>
+                        <outlet property="InterestDisplay" destination="KsH-yi-Psb" id="hz8-S7-zP5"/>
+                        <outlet property="TotalDisplay" destination="hvL-C2-kFC" id="Obt-b7-8oE"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1275" y="-310"/>
+        </scene>
+        <!--Tip View Controller - Tip-->
+        <scene sceneID="GP1-0O-mOG">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wk1-i8-Kse" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="GSj-qa-aJW" customClass="TipViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qPG-he-v4P">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tip: Rs. 30/-" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="IWb-7w-AmB">
+                                <rect key="frame" x="20" y="45" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tip" id="PYa-7H-kct" userLabel="Navigation Item - Back">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="7pY-DP-4xs"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="TIPDisplay" destination="IWb-7w-AmB" id="U2B-MY-CHN"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1332" y="642"/>
+        </scene>
+        <!--Calculator Second View Controller - Second-->
+        <scene sceneID="13">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="TipMainScreen" title="Second" id="3" customClass="CalculatorSecondViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="17">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DS6-2S-Ae8">
+                                <rect key="frame" x="20" y="232" width="280" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="TipCalculator:" destination="3" eventType="touchUpInside" id="ESd-vE-pan"/>
+                                    <segue destination="GSj-qa-aJW" kind="push" identifier="CalculateTip" id="n1E-uE-2xR"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bill Amount" minimumFontSize="17" clearButtonMode="whileEditing" id="4Y1-vt-nZx">
+                                <rect key="frame" x="20" y="72" width="280" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="3" id="dVF-yq-d5E"/>
+                                </connections>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="1" maxValue="100" id="RVh-dv-40Z">
+                                <rect key="frame" x="142" y="158" width="130" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="3" eventType="valueChanged" id="Ql7-MI-uti"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="50" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="hEy-fx-SYP">
+                                <rect key="frame" x="58" y="158" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tip" image="28-star.png" id="6"/>
+                    <navigationItem key="navigationItem" title="Tip Calculator" id="ElE-JW-ASv"/>
+                    <connections>
+                        <outlet property="billAmount" destination="4Y1-vt-nZx" id="Mwg-s3-P9B"/>
+                        <outlet property="tipRate" destination="RVh-dv-40Z" id="vrj-xU-6Y2"/>
+                        <outlet property="tipSliderLabel" destination="hEy-fx-SYP" id="faH-mT-24C"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="819" y="642"/>
+        </scene>
+        <!--Navigation Controller - Item-->
+        <scene sceneID="kAm-XK-aWp">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yVh-jL-0Kq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="kiK-Dx-8fD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ZEz-zT-HFP"/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="9fT-KY-kj0">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3" kind="relationship" relationship="rootViewController" id="ZzT-bN-Jo5"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="360" y="642"/>
+        </scene>
+        <!--Navigation Controller - Item-->
+        <scene sceneID="pbp-fQ-lp9">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OtK-Er-OJr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="5Nm-Jy-0S5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="wBF-pI-VRZ"/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="wEf-f5-Vbc">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="Tmh-9f-oWE"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="292" y="-310"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="15">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
+                <tabBarController id="4" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="5">
+                        <rect key="frame" x="0.0" y="431" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="5Nm-Jy-0S5" kind="relationship" relationship="viewControllers" id="U6i-pJ-kwr"/>
+                        <segue destination="kiK-Dx-8fD" kind="relationship" relationship="viewControllers" id="pbZ-i9-1Yf"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="-416" y="194"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="28-star.png" width="26" height="26"/>
+        <image name="53-house.png" width="22" height="22"/>
+    </resources>
+    <classes>
+        <class className="CalculatorFirstViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CalculatorFirstViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="Calculate:"/>
+                <relationship kind="action" name="sliderChanged:"/>
+                <relationship kind="outlet" name="loanTerm" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="principalAmount" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="rate" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="sliderLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="CalculatorSecondViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CalculatorSecondViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="TipCalculator:"/>
+                <relationship kind="action" name="sliderChanged:"/>
+                <relationship kind="outlet" name="billAmount" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="tipRate" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="tipSliderLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="EmiViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EmiViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="EmiDisplay" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="InterestDisplay" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="TotalDisplay" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="TipViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TipViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="TIPDisplay" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

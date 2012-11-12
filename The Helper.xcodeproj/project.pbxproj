@@ -1,0 +1,349 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE2936CD1648E42F00DC02BA /* EmiInput.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2936CC1648E42F00DC02BA /* EmiInput.m */; };
+		CE2936D11648F20B00DC02BA /* EmiDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2936D01648F20B00DC02BA /* EmiDataController.m */; };
+		CE2936D41648FCBA00DC02BA /* BillInput.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2936D31648FCBA00DC02BA /* BillInput.m */; };
+		CE2936D71648FCD400DC02BA /* TipDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2936D61648FCD400DC02BA /* TipDataController.m */; };
+		CE2936E016490DAD00DC02BA /* TipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2936DF16490DAD00DC02BA /* TipViewController.m */; };
+		CE2936E316490DCE00DC02BA /* EmiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2936E216490DCE00DC02BA /* EmiViewController.m */; };
+		CEE14FBF1648D8D90001F5AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE14FBE1648D8D90001F5AC /* UIKit.framework */; };
+		CEE14FC11648D8D90001F5AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE14FC01648D8D90001F5AC /* Foundation.framework */; };
+		CEE14FC31648D8D90001F5AC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE14FC21648D8D90001F5AC /* CoreGraphics.framework */; };
+		CEE14FC91648D8D90001F5AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEE14FC71648D8D90001F5AC /* InfoPlist.strings */; };
+		CEE14FCB1648D8D90001F5AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE14FCA1648D8D90001F5AC /* main.m */; };
+		CEE14FCF1648D8D90001F5AC /* CalculatorAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE14FCE1648D8D90001F5AC /* CalculatorAppDelegate.m */; };
+		CEE14FD21648D8D90001F5AC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE14FD01648D8D90001F5AC /* MainStoryboard.storyboard */; };
+		CEE14FD51648D8D90001F5AC /* CalculatorFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE14FD41648D8D90001F5AC /* CalculatorFirstViewController.m */; };
+		CEE14FD71648D8D90001F5AC /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = CEE14FD61648D8D90001F5AC /* first.png */; };
+		CEE14FD91648D8D90001F5AC /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEE14FD81648D8D90001F5AC /* first@2x.png */; };
+		CEE14FDC1648D8D90001F5AC /* CalculatorSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE14FDB1648D8D90001F5AC /* CalculatorSecondViewController.m */; };
+		CEE14FDE1648D8D90001F5AC /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = CEE14FDD1648D8D90001F5AC /* second.png */; };
+		CEE14FE01648D8D90001F5AC /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEE14FDF1648D8D90001F5AC /* second@2x.png */; };
+		CEE14FE71648D9BF0001F5AC /* 28-star.png in Resources */ = {isa = PBXBuildFile; fileRef = CEE14FE61648D9BF0001F5AC /* 28-star.png */; };
+		CEE14FE91648DA150001F5AC /* 53-house.png in Resources */ = {isa = PBXBuildFile; fileRef = CEE14FE81648DA150001F5AC /* 53-house.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE2936CB1648E42F00DC02BA /* EmiInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmiInput.h; sourceTree = "<group>"; };
+		CE2936CC1648E42F00DC02BA /* EmiInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmiInput.m; sourceTree = "<group>"; };
+		CE2936CF1648F20B00DC02BA /* EmiDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmiDataController.h; sourceTree = "<group>"; };
+		CE2936D01648F20B00DC02BA /* EmiDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmiDataController.m; sourceTree = "<group>"; };
+		CE2936D21648FCB900DC02BA /* BillInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillInput.h; sourceTree = "<group>"; };
+		CE2936D31648FCBA00DC02BA /* BillInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BillInput.m; sourceTree = "<group>"; };
+		CE2936D51648FCD400DC02BA /* TipDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipDataController.h; sourceTree = "<group>"; };
+		CE2936D61648FCD400DC02BA /* TipDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipDataController.m; sourceTree = "<group>"; };
+		CE2936DE16490DAD00DC02BA /* TipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipViewController.h; sourceTree = "<group>"; };
+		CE2936DF16490DAD00DC02BA /* TipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipViewController.m; sourceTree = "<group>"; };
+		CE2936E116490DCE00DC02BA /* EmiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmiViewController.h; sourceTree = "<group>"; };
+		CE2936E216490DCE00DC02BA /* EmiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmiViewController.m; sourceTree = "<group>"; };
+		CEE14FBA1648D8D90001F5AC /* The Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEE14FBE1648D8D90001F5AC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CEE14FC01648D8D90001F5AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CEE14FC21648D8D90001F5AC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CEE14FC61648D8D90001F5AC /* The Helper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "The Helper-Info.plist"; sourceTree = "<group>"; };
+		CEE14FC81648D8D90001F5AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CEE14FCA1648D8D90001F5AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEE14FCC1648D8D90001F5AC /* The Helper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "The Helper-Prefix.pch"; sourceTree = "<group>"; };
+		CEE14FCD1648D8D90001F5AC /* CalculatorAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorAppDelegate.h; sourceTree = "<group>"; };
+		CEE14FCE1648D8D90001F5AC /* CalculatorAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorAppDelegate.m; sourceTree = "<group>"; };
+		CEE14FD11648D8D90001F5AC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		CEE14FD31648D8D90001F5AC /* CalculatorFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorFirstViewController.h; sourceTree = "<group>"; };
+		CEE14FD41648D8D90001F5AC /* CalculatorFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorFirstViewController.m; sourceTree = "<group>"; };
+		CEE14FD61648D8D90001F5AC /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		CEE14FD81648D8D90001F5AC /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		CEE14FDA1648D8D90001F5AC /* CalculatorSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorSecondViewController.h; sourceTree = "<group>"; };
+		CEE14FDB1648D8D90001F5AC /* CalculatorSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorSecondViewController.m; sourceTree = "<group>"; };
+		CEE14FDD1648D8D90001F5AC /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		CEE14FDF1648D8D90001F5AC /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		CEE14FE61648D9BF0001F5AC /* 28-star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "28-star.png"; sourceTree = "<group>"; };
+		CEE14FE81648DA150001F5AC /* 53-house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "53-house.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEE14FB71648D8D90001F5AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE14FBF1648D8D90001F5AC /* UIKit.framework in Frameworks */,
+				CEE14FC11648D8D90001F5AC /* Foundation.framework in Frameworks */,
+				CEE14FC31648D8D90001F5AC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEE14FAF1648D8D90001F5AC = {
+			isa = PBXGroup;
+			children = (
+				CE2936E116490DCE00DC02BA /* EmiViewController.h */,
+				CE2936E216490DCE00DC02BA /* EmiViewController.m */,
+				CE2936DE16490DAD00DC02BA /* TipViewController.h */,
+				CE2936DF16490DAD00DC02BA /* TipViewController.m */,
+				CEE14FC41648D8D90001F5AC /* The Helper */,
+				CEE14FBD1648D8D90001F5AC /* Frameworks */,
+				CEE14FBB1648D8D90001F5AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEE14FBB1648D8D90001F5AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEE14FBA1648D8D90001F5AC /* The Helper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEE14FBD1648D8D90001F5AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEE14FBE1648D8D90001F5AC /* UIKit.framework */,
+				CEE14FC01648D8D90001F5AC /* Foundation.framework */,
+				CEE14FC21648D8D90001F5AC /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEE14FC41648D8D90001F5AC /* The Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CEE14FE81648DA150001F5AC /* 53-house.png */,
+				CEE14FE61648D9BF0001F5AC /* 28-star.png */,
+				CEE14FCD1648D8D90001F5AC /* CalculatorAppDelegate.h */,
+				CEE14FCE1648D8D90001F5AC /* CalculatorAppDelegate.m */,
+				CEE14FD01648D8D90001F5AC /* MainStoryboard.storyboard */,
+				CEE14FD31648D8D90001F5AC /* CalculatorFirstViewController.h */,
+				CEE14FD41648D8D90001F5AC /* CalculatorFirstViewController.m */,
+				CEE14FD61648D8D90001F5AC /* first.png */,
+				CEE14FD81648D8D90001F5AC /* first@2x.png */,
+				CEE14FDA1648D8D90001F5AC /* CalculatorSecondViewController.h */,
+				CEE14FDB1648D8D90001F5AC /* CalculatorSecondViewController.m */,
+				CE2936D21648FCB900DC02BA /* BillInput.h */,
+				CE2936D31648FCBA00DC02BA /* BillInput.m */,
+				CE2936D51648FCD400DC02BA /* TipDataController.h */,
+				CE2936D61648FCD400DC02BA /* TipDataController.m */,
+				CEE14FDD1648D8D90001F5AC /* second.png */,
+				CEE14FDF1648D8D90001F5AC /* second@2x.png */,
+				CEE14FC51648D8D90001F5AC /* Supporting Files */,
+				CE2936CB1648E42F00DC02BA /* EmiInput.h */,
+				CE2936CC1648E42F00DC02BA /* EmiInput.m */,
+				CE2936CF1648F20B00DC02BA /* EmiDataController.h */,
+				CE2936D01648F20B00DC02BA /* EmiDataController.m */,
+			);
+			path = "The Helper";
+			sourceTree = "<group>";
+		};
+		CEE14FC51648D8D90001F5AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEE14FC61648D8D90001F5AC /* The Helper-Info.plist */,
+				CEE14FC71648D8D90001F5AC /* InfoPlist.strings */,
+				CEE14FCA1648D8D90001F5AC /* main.m */,
+				CEE14FCC1648D8D90001F5AC /* The Helper-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEE14FB91648D8D90001F5AC /* The Helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEE14FE31648D8D90001F5AC /* Build configuration list for PBXNativeTarget "The Helper" */;
+			buildPhases = (
+				CEE14FB61648D8D90001F5AC /* Sources */,
+				CEE14FB71648D8D90001F5AC /* Frameworks */,
+				CEE14FB81648D8D90001F5AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "The Helper";
+			productName = "The Helper";
+			productReference = CEE14FBA1648D8D90001F5AC /* The Helper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEE14FB11648D8D90001F5AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Calculator;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = CEE14FB41648D8D90001F5AC /* Build configuration list for PBXProject "The Helper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CEE14FAF1648D8D90001F5AC;
+			productRefGroup = CEE14FBB1648D8D90001F5AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEE14FB91648D8D90001F5AC /* The Helper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEE14FB81648D8D90001F5AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE14FC91648D8D90001F5AC /* InfoPlist.strings in Resources */,
+				CEE14FD21648D8D90001F5AC /* MainStoryboard.storyboard in Resources */,
+				CEE14FD71648D8D90001F5AC /* first.png in Resources */,
+				CEE14FD91648D8D90001F5AC /* first@2x.png in Resources */,
+				CEE14FDE1648D8D90001F5AC /* second.png in Resources */,
+				CEE14FE01648D8D90001F5AC /* second@2x.png in Resources */,
+				CEE14FE71648D9BF0001F5AC /* 28-star.png in Resources */,
+				CEE14FE91648DA150001F5AC /* 53-house.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEE14FB61648D8D90001F5AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE14FCB1648D8D90001F5AC /* main.m in Sources */,
+				CEE14FCF1648D8D90001F5AC /* CalculatorAppDelegate.m in Sources */,
+				CEE14FD51648D8D90001F5AC /* CalculatorFirstViewController.m in Sources */,
+				CEE14FDC1648D8D90001F5AC /* CalculatorSecondViewController.m in Sources */,
+				CE2936CD1648E42F00DC02BA /* EmiInput.m in Sources */,
+				CE2936D11648F20B00DC02BA /* EmiDataController.m in Sources */,
+				CE2936D41648FCBA00DC02BA /* BillInput.m in Sources */,
+				CE2936D71648FCD400DC02BA /* TipDataController.m in Sources */,
+				CE2936E016490DAD00DC02BA /* TipViewController.m in Sources */,
+				CE2936E316490DCE00DC02BA /* EmiViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CEE14FC71648D8D90001F5AC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEE14FC81648D8D90001F5AC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CEE14FD01648D8D90001F5AC /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEE14FD11648D8D90001F5AC /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEE14FE11648D8D90001F5AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CEE14FE21648D8D90001F5AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEE14FE41648D8D90001F5AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "The Helper/The Helper-Prefix.pch";
+				INFOPLIST_FILE = "The Helper/The Helper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CEE14FE51648D8D90001F5AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "The Helper/The Helper-Prefix.pch";
+				INFOPLIST_FILE = "The Helper/The Helper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEE14FB41648D8D90001F5AC /* Build configuration list for PBXProject "The Helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEE14FE11648D8D90001F5AC /* Debug */,
+				CEE14FE21648D8D90001F5AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEE14FE31648D8D90001F5AC /* Build configuration list for PBXNativeTarget "The Helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEE14FE41648D8D90001F5AC /* Debug */,
+				CEE14FE51648D8D90001F5AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEE14FB11648D8D90001F5AC /* Project object */;
+}
